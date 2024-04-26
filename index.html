@@ -7,10 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
 
+
+  
     <link
       rel="stylesheet"
       href="https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.7/css/Bootstrap.min.css"
     />
+
+    <!-- Linking icon file -->
+  <script src="https://kit.fontawesome.com/741592ca6e.js" crossorigin="anonymous"></script>
+
+  <!-- Linking bootstrap CSS file -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" /> -->
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script> -->
+
+
     <style></style>
   </head>
 
@@ -24,42 +39,43 @@
             style="width: 52px"
           />
         </div>
-        <label for="search"></label>
-        <input
-          id="header-search"
-          list="predefined-search"
-          size="50"
-          type="search"
-          autocomplete="off"
-          placeholder="  Search for Categories "
-        />
+        <input type="text" class="typeahead" data-provide="typeahead"
+          placeholder="  &#128269;  What do you want to learn ? " id="inputBox"/>
 
         <ul class="navigation">
-          <a href="#inspiration">
-            <li>Home</li>
-          </a>
-          <a href="#">
+          <a href="#inspiration" class="atag1">
             <li>Categories</li>
           </a>
-          <a href="#">
-            <li>Packages</li>
-          </a>
-          <a href="#">
+          <a href="#" class="atag1">
             <li>About</li>
           </a>
-          <a href="index1.html">
-            <li>Sign in</li>
+          <a href="#">
+            <li> <input type="submit" value="Sign In" id="signInButton"> </li>
           </a>
+          <a href="#">
+            <li></li>
+          </a>
+         
         </ul>
       </nav>
     </header>
+
+    <!-- First Page -->
+    <div id="firstSubpage">
+
+
+    </div>
+
+  
+
+
     <center>
       <h1 class="heading1">programming</h1>
       <div class="container">
         <div class="container horizontal-scrollable first">
           <div class="row text-center">
-            <div class="col-xs-4">
-              <div class="card" style="width: 25rem">
+            <div class="col-xs-4 col-3 mainCard" style="margin: 30px;">
+              <div class="card" style="width: 20rem">
                 <img
                   class="card-img-top"
                   src="image/html_css.avif"
@@ -75,8 +91,8 @@
               </div>
             </div>
 
-            <div class="col-xs-4">
-              <div class="card" style="width: 25rem">
+            <div class="col-xs-4 col-3" style="margin: 30px;">
+              <div class="card" style="width: 20rem">
                 <img
                   class="card-img-top"
                   src="image/javascript.avif"
@@ -92,8 +108,8 @@
               </div>
             </div>
           
-            <div class="col-xs-4">
-              <div class="card" style="width: 25rem">
+            <div class="col-xs-4 col-3 mainCard " style="margin: 30px;">
+              <div class="card" style="width: 20rem">
                 <img
                   class="card-img-top"
                   src="image/java.avif"
@@ -108,8 +124,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-4">
-              <div class="card" style="width: 25rem">
+            <div class="col-xs-4 col-3 mainCard" style="margin: 30px;">
+              <div class="card" style="width: 20rem">
                 <img
                   class="card-img-top"
                   src="image/python.webp"
@@ -124,8 +140,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-4">
-              <div class="card" style="width: 25rem">
+            <div class="col-xs-4 col-3" style="margin: 30px;">
+              <div class="card" style="width: 20rem">
                 <img
                   class="card-img-top"
                   src="image/C++.jpg"
@@ -140,7 +156,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs-4 col-3" style="margin: 30px;">
               <div class="card" style="width: 25rem">
                 <img
                   class="card-img-top"
@@ -720,5 +736,72 @@
       <br />
       <br />
     </center>
+        <!-- Sign In Subpage -->
+
+  <div class="container ">
+    
+    <div class="form-box SignInContainer">
+      <img src="image/crossIcon.png" alt="" id="crosIcon">
+        <h1 id="title">Sign Up</h1> <br> <br>
+
+        <form id="form">
+
+<div class="input-group">
+    <div class="input-field" id="namefield"> &nbsp;
+        <i class="fa-solid fa-user"></i> &nbsp; &nbsp;
+        <input type="text" placeholder="Name" class="inputBox">
+    </div>
+    <br>
+
+    <div class="input-group">
+        <div class="input-field">  &nbsp; 
+            <i class="fa-solid fa-envelope"></i> &nbsp; &nbsp;
+            <input type="email" placeholder="email" class="inputBox">
+        </div>
+        <br>
+
+        <div class="input-group">
+            <div class="input-field"> &nbsp;
+                <i class="fa-solid fa-key"></i> &nbsp; &nbsp;
+                <input type="password" placeholder="password " class="inputBox">
+            </div> <br> <br>
+        </div>
+    
+</div>
+<div class="btn-filed">
+    <button type="button"id="signupBtn">Sign Up</button>
+    <button type="button" id="signinBtn"class="disable">sign in</button>
+</div>
+
+        </form>
+    </div>
+   </div> 
+
+
+   <!-- Copyright section -->
+
+  <hr style="border: 1px solid black" />
+
+  <h4 class="text-center copyrightLine">
+    copyright&nbsp;<img src="image/copyrightlogo.webp" alt="" class="copyRightlogo" />&nbsp;.&nbsp;Made with
+    <img src="image/heartlogo.png" alt="" class="copyRightlogo" /> by omkar pandagale.
+    All rights reserved .
+  </h4>
+   
+
+  
+    <!-- Linking js file -->
+
+    <script src="script.js"></script>
+    
+
+      <!-- Linking bootstrap JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+  crossorigin="anonymous"></script>
+  
   </body>
 </html>
