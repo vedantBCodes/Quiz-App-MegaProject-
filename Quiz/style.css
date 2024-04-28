@@ -62,3 +62,24 @@ hr{
         
     }
 }
+
+
+
+/* Omkar's code */
+
+
+.container{
+   
+    background-color: white;
+    box-shadow: 4px 4px 4px  rgb(240, 240, 240);
+}
+body{
+    background-color: rgb(216, 216, 216);
+}
+#arrowIcon{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    left: 35px;
+    top: 15px;
+}

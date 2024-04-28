@@ -318,7 +318,7 @@ select{
 
 /* Copyright style */
 
-.copyRightlogo{
+/* .copyRightlogo{
   width: 20px;
   height: 20px;
 }
@@ -330,7 +330,7 @@ select{
   border-radius: 5px;
   background-color: rgb(230, 227, 224);
   margin: 0px;
-}
+} */
 #firstSubpage{
   background-image: url(image/homePageBgImage.jpeg);
   background-repeat: no-repeat;

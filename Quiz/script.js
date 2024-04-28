@@ -139,8 +139,20 @@ function clickViewScoreButton()
 function showScore()
 {
     let div=document.createElement("div");
-    div.innerHTML=`<h>You scored ${correctAns} out of ${questions.length-1}</h> !`;
+    if(correctAns>7)
+    {
+        div.innerHTML=`<h>Congratulation !!! <br> You scored ${correctAns} out of ${questions.length-1}</h> !`;
+    }
+    else if(correctAns>=5 && correctAns<8)
+    {
+        div.innerHTML=`<h> You scored ${correctAns} out of ${questions.length-1} <br> Better luck next time !</h> !`;
+    }
+    else{
+        div.innerHTML=`<h> You scored ${correctAns} out of ${questions.length-1} <br> You can do better <br> Good luck !</h> !`;
+    }
+
     div.style.textAlign="center";
+    div.style.marginTop="150px";
     div.style.fontSize="30px";
     div.classList.add("score");
     questions[10].insertAdjacentElement("afterend",div);
@@ -154,3 +166,6 @@ function removeElement()
         btn[i].remove();
     }
 }
+
+var arrowIcon=document.getElementById("arrowIcon");
+
